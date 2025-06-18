@@ -1,0 +1,33 @@
+[
+    {
+        "UpdateStageName": "SCUM Download",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "SteamCMD",
+        "UpdateSourceData": "3792580",
+        "UpdateSourceArgs": "513710",
+        "UpdateSourceVersion": "{{ReleaseStream}}",
+        "UnzipUpdateSource": false,
+        "OverwriteExistingFiles": false,
+        "ForceDownloadPlatform": "Windows",
+        "UpdateSourceConditionValue": "true",
+        "DeleteAfterExtract": true,
+        "OneShot": false
+    },
+    {
+        "UpdateStageName": "Config Directory Creation",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "CreateDirectory",
+        "UpdateSourceArgs": "{{$FullBaseDir}}SCUM/Saved/Config/WindowsServer",
+        "SkipOnFailure": false
+    },
+    {
+        "UpdateStageName": "ServerSettings.ini File Download",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "FetchURL",
+        "UpdateSourceData": "https://raw.githubusercontent.com/REDaHEAD223/amp/refs/heads/main/ServerSettings.ini",
+        "UpdateSourceTarget": "{{$FullBaseDir}}SCUM/Saved/Config/WindowsServer",
+        "UpdateSourceArgs": "ServerSettings.ini",
+        "OverwriteExistingFiles": false,
+        "SkipOnFailure": false
+    }
+]
