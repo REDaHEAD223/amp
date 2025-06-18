@@ -1,0 +1,16 @@
+[
+    {
+        "UpdateStageName": "SCUM Download",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "SteamCMD",
+        "UpdateSourceData": "3792580",
+        "UpdateSourceArgs": "513710",
+        "UpdateSourceVersion": "{{ReleaseStream}}",
+        "UnzipUpdateSource": false,
+        "OverwriteExistingFiles": false,
+        "ForceDownloadPlatform": "Windows",
+        "UpdateSourceConditionValue": "true",
+        "DeleteAfterExtract": true,
+        "OneShot": false
+    }
+]
